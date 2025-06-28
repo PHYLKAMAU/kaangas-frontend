@@ -1,0 +1,53 @@
+:root {
+  --primary-teal: #20B2AA;
+  --primary-orange: #FF6347;
+  --secondary-blue: #4A90E2;
+  --background-light: #FAFAFA;
+  --text-dark: #2c3e50;
+  --text-muted: #6c757d;
+  --border-light: rgba(0,0,0,0.1);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--background-light);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-orange) 100%);
+}
+
+.glass-effect {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary-gradient {
+  background: linear-gradient(45deg, var(--primary-teal), var(--primary-orange));
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-modern {
+  border: none;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+}
