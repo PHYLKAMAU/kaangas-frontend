@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: kaanagas-frontend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    branch: main
+    healthCheckPath: /health
